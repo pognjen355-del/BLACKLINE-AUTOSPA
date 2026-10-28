@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blackline Auto Spa | Detailing automobila</title>
+<meta name="description" content="Blackline Auto Spa: detailing automobila spolja i unutra. Pranje, poliranje, keramička zaštita i dubinsko čišćenje.">
+<meta property="og:title" content="Blackline Auto Spa">
+<meta property="og:description" content="Detailing automobila spolja i unutra.">
+<meta property="og:image" content="hero.jpg">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0b0c'/%3E%3Crect x='6' y='14' width='20' height='4' fill='%23d61f36'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:16px}
+img{max-width:100%}
+[hidden]{display:none !important}
+body{margin:0;background:#0b0b0c}
+a{color:#ff4d64}a:hover{color:#f2f2f0}
+.bl-wrap{max-width:1240px;margin:0 auto;padding-left:48px;padding-right:48px;box-sizing:border-box}
+.bl-sec{padding-top:120px;padding-bottom:120px}
+.bl-2col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px}
+.bl-3col{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.bl-4col{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.bl-book{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:48px;align-items:stretch}
+.bl-about{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px;align-items:start}
+.bl-hero-h{font-size:88px}
+.bl-h2{font-size:48px}
+.bl-nav{display:flex}
+.bl-mnav{display:none}
+.bl-mnav summary{list-style:none}
+.bl-mnav summary::-webkit-details-marker{display:none}
+.bl-hero-ov{background:rgba(11,11,12,0.55)}
+.bl-btn{background:#d61f36;color:#ffffff;text-decoration:none;border:0;cursor:pointer}
+.bl-btn:hover{background:#b3182c;color:#ffffff}
+.bl-ghost{background:transparent;color:#f2f2f0;text-decoration:none;border:1px solid #3a3a3f;cursor:pointer}
+.bl-ghost:hover{border-color:#f2f2f0;color:#f2f2f0}
+.bl-navlink{color:#c8c8cc;text-decoration:none}
+.bl-navlink:hover{color:#f2f2f0}
+.bl-field:focus,.bl-btn:focus-visible,.bl-ghost:focus-visible,.bl-navlink:focus-visible,summary:focus-visible{outline:2px solid #ff4d64;outline-offset:2px}
+.bl-cmp{aspect-ratio:4/3}
+.bl-cmp-range{position:absolute;top:0;left:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;z-index:4;touch-action:pan-y}
+.bl-cmp-handle{position:absolute;top:50%;width:48px;height:48px;margin-left:-24px;margin-top:-24px;border-radius:50%;background:#f2f2f0;color:#0b0b0c;display:flex;align-items:center;justify-content:center;z-index:3;pointer-events:none}
+.bl-cmp-range:focus-visible + .bl-cmp-handle{outline:3px solid #ff4d64;outline-offset:3px}
+.bl-faq summary{list-style:none;cursor:pointer}
+.bl-faq summary::-webkit-details-marker{display:none}
+.bl-faq-ic{transition:transform .2s}
+.bl-faq[open] .bl-faq-ic{transform:rotate(45deg)}
+@media (max-width:1024px){
+.bl-4col{grid-template-columns:repeat(2,minmax(0,1fr))}
+.bl-about{grid-template-columns:minmax(0,1fr);gap:48px}
+.bl-nav{display:none}
+.bl-mnav{display:block}
+}
+@media (max-width:768px){
+.bl-wrap{padding-left:24px;padding-right:24px}
+.bl-sec{padding-top:96px;padding-bottom:96px}
+.bl-2col,.bl-3col,.bl-4col,.bl-book{grid-template-columns:minmax(0,1fr);gap:24px}
+.bl-benefits{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:24px 16px !important}
+.bl-hero-h{font-size:52px}
+.bl-h2{font-size:36px}
+.bl-hero-ov{background:rgba(11,11,12,0.66)}
+.bl-hero-img{object-position:74% 55% !important}
+.bl-hero-pad{padding-top:96px !important;padding-bottom:48px !important}
+.bl-benefits{margin-top:72px !important}
+.bl-head-sub{display:none}
+.bl-head-cta{display:none !important}
+.bl-cmp{aspect-ratio:1/1}
+}
+</style>
+</head>
+<body>
+<div style="width: 100%; background: #0b0b0c; color: #f2f2f0; font-family: Barlow, system-ui, sans-serif; font-size: 18px; line-height: 1.6">
+
+<!-- ZAGLAVLJE -->
+<header style="position: relative; z-index: 20; background: #0b0b0c; border-bottom: 1px solid #2c2c30">
+<div class="bl-wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 20px; padding-bottom: 20px">
+<a href="#pocetna" aria-label="Blackline Auto Spa, početna" style="display: flex; align-items: center; gap: 12px; text-decoration: none">
+<span aria-hidden="true" style="display: block; width: 28px; height: 4px; background: #d61f36"></span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: 0.16em; color: #f2f2f0">BLACKLINE</span>
+<span class="bl-head-sub" style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.16em; color: #a8a8ad">AUTO SPA</span>
+</a>
+<nav class="bl-nav" aria-label="Glavna navigacija" style="align-items: center; gap: 28px; font-size: 16px; font-weight: 500">
+<a class="bl-navlink" href="#usluge">Usluge</a>
+<a class="bl-navlink" href="#radovi">Pre i posle</a>
+<a class="bl-navlink" href="#cenovnik">Cenovnik</a>
+<a class="bl-navlink" href="#radionica">O nama</a>
+<a class="bl-navlink" href="#pitanja">Pitanja</a>
+<a class="bl-navlink" href="#kontakt">Kontakt</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 12px">
+<a class="bl-btn bl-head-cta" href="#rezervacija" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 4px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 0.04em">REZERVIŠI TERMIN</a>
+<details class="bl-mnav" style="position: relative">
+<summary aria-label="Otvori meni" style="display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 14px; border: 1px solid #3a3a3f; border-radius: 4px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 0.08em; color: #f2f2f0">MENI <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></summary>
+<nav aria-label="Mobilna navigacija" style="position: absolute; right: 0; top: 56px; width: 240px; background: #151517; border: 1px solid #2c2c30; border-radius: 8px; padding: 8px; display: flex; flex-direction: column; font-size: 17px; font-weight: 500">
+<a class="bl-navlink" href="#usluge" style="display: flex; align-items: center; min-height: 44px; padding: 0 12px">Usluge</a>
+<a class="bl-navlink" href="#radovi" style="display: flex; align-items: center; min-height: 44px; padding: 0 12px">Pre i posle</a>
+<a class="bl-navlink" href="#tretman" style="display: flex; align-items: center; min-height: 44px; padding: 0 12px">Kako izgleda tretman</a>
+<a class="bl-navlink" href="#cenovnik" style="display: flex; align-items: center; min-height: 44px; padding: 0 12px">Cenovnik</a>
+<a class="bl-navlink" href="#radionica" style="display: flex; align-items: center; min-height: 44px; padding: 0 12px">O nama</a>
+<a class="bl-navlink" href="#pitanja" style="display: flex; align-items: center; min-height: 44px; padding: 0 12px">Pitanja</a>
+<a class="bl-navlink" href="#kontakt" style="display: flex; align-items: center; min-height: 44px; padding: 0 12px">Kontakt</a>
+<a class="bl-btn" href="#rezervacija" style="display: flex; align-items: center; justify-content: center; min-height: 48px; margin-top: 8px; border-radius: 4px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.04em">REZERVIŠI TERMIN</a>
+</nav>
+</details>
+</div>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="pocetna" style="position: relative; background: #0b0b0c; overflow: hidden">
+<img class="bl-hero-img" src="hero.jpg" alt="Crni sedan sa sjajnim lakom u Blackline studiju, crveno svetlo u pozadini" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 65% center">
+<div class="bl-hero-ov" aria-hidden="true" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0"></div>
+<div class="bl-wrap bl-hero-pad" style="position: relative; padding-top: 160px; padding-bottom: 64px">
+<div style="display: flex; flex-direction: column; gap: 24px; max-width: 640px">
+<div style="display: flex; align-items: center; gap: 12px">
+<span aria-hidden="true" style="display: block; width: 28px; height: 3px; background: #d61f36"></span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; color: #ff6b7f">DETAILING AUTOMOBILA</span>
+</div>
+<h1 class="bl-hero-h" style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; line-height: 0.92; letter-spacing: -0.005em; text-transform: uppercase; color: #ffffff">Više od običnog <span style="color: #ff6b7f">pranja</span></h1>
+<p style="margin: 0; max-width: 44ch; font-size: 20px; line-height: 1.55; color: #ececea">Vraćamo tvom autu sjaj sa kojim je izašao iz salona. Poliramo lak, čistimo enterijer i štitimo ga za duže.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; padding-top: 8px">
+<a class="bl-btn" href="#rezervacija" style="display: inline-flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 28px; border-radius: 4px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.04em">REZERVIŠI TERMIN <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M4 12h15M13 6l6 6-6 6"></path></svg></a>
+<a class="bl-ghost" href="#radovi" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 28px; border-radius: 4px; border-color: #8a8a90; background: rgba(11, 11, 12, 0.6); font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.04em">POGLEDAJ RADOVE</a>
+</div>
+</div>
+<div class="bl-4col bl-benefits" style="margin-top: 160px; padding-top: 32px; border-top: 1px solid #4a4a4f">
+<div style="display: flex; align-items: center; gap: 16px">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ff4d64" stroke-width="2" stroke-linecap="square" style="flex: none"><rect x="3" y="5" width="18" height="16"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg>
+<span style="font-size: 16px; line-height: 1.4; color: #d0d0d4"><strong style="color: #ffffff; font-weight: 600">3 godine</strong><br>radimo detailing</span>
+</div>
+<div style="display: flex; align-items: center; gap: 16px">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ff4d64" stroke-width="2" stroke-linecap="square" style="flex: none"><path d="M3 16v-4l2-5h14l2 5v4z"></path><path d="M3 12h18"></path><circle cx="7.5" cy="18.5" r="1.5"></circle><circle cx="16.5" cy="18.5" r="1.5"></circle></svg>
+<span style="font-size: 16px; line-height: 1.4; color: #d0d0d4"><strong style="color: #ffffff; font-weight: 600">500+ automobila</strong><br>prošlo kroz naše ruke</span>
+</div>
+<div style="display: flex; align-items: center; gap: 16px">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ff4d64" stroke-width="2" stroke-linecap="square" style="flex: none"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"></path></svg>
+<span style="font-size: 16px; line-height: 1.4; color: #d0d0d4"><strong style="color: #ffffff; font-weight: 600">Pregled pod svetlom</strong><br>pre i posle posla</span>
+</div>
+<div style="display: flex; align-items: center; gap: 16px">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ff4d64" stroke-width="2" stroke-linecap="square" style="flex: none"><polyline points="5 12 10 17 19 7"></polyline></svg>
+<span style="font-size: 16px; line-height: 1.4; color: #d0d0d4"><strong style="color: #ffffff; font-weight: 600">Spolja i unutra</strong><br>u jednom terminu</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- USLUGE -->
+<section id="usluge" style="background: #151517">
+<div class="bl-wrap bl-sec">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin-bottom: 64px; text-align: center">
+<div style="display: flex; align-items: center; gap: 12px">
+<span aria-hidden="true" style="display: block; width: 28px; height: 3px; background: #d61f36"></span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; color: #ff4d64">NAŠE USLUGE</span>
+</div>
+<h2 class="bl-h2" style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; line-height: 1; text-transform: uppercase; color: #f2f2f0">Šta radimo na tvom <span style="color: #ff4d64">autu</span></h2>
+<p style="margin: 0; max-width: 52ch; color: #a8a8ad">Četiri usluge. Uzmeš jednu ili spojimo više u isti termin.</p>
+</div>
+<div class="bl-4col">
+<div style="background: #0b0b0c; border: 1px solid #2c2c30; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column">
+<img src="usluga-pranje.jpg" alt="Detailer ručno pere crni sedan prekriven penom" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 60% center">
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 24px 24px; flex-grow: 1">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square"><path d="M12 3s-6 7-6 11a6 6 0 0 0 12 0c0-4-6-11-6-11z"></path></svg>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 26px; line-height: 1.1">Detaljno pranje</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: #a8a8ad; flex-grow: 1">Peremo ručno, spolja i unutra. Skidamo prljavštinu iz fuga i sa felni.</p>
+<a class="bl-ghost" href="#rezervacija" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; margin-top: 8px; border-radius: 4px; font-size: 15px; font-weight: 500">Rezerviši pranje</a>
+</div>
+</div>
+<div style="background: #0b0b0c; border: 1px solid #2c2c30; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column">
+<img src="usluga-poliranje.jpg" alt="Detailer polira haubu crnog auta mašinom za poliranje" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% center">
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 24px 24px; flex-grow: 1">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square"><path d="M12 4a8 8 0 1 0 0 16 8 8 0 1 0 0-16M12 10a2 2 0 1 0 0 4 2 2 0 1 0 0-4"></path></svg>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 26px; line-height: 1.1">Poliranje</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: #a8a8ad; flex-grow: 1">Skidamo kružne ogrebotine od četki i vraćamo laku dubinu.</p>
+<a class="bl-ghost" href="#rezervacija" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; margin-top: 8px; border-radius: 4px; font-size: 15px; font-weight: 500">Rezerviši poliranje</a>
+</div>
+</div>
+<div style="background: #0b0b0c; border: 1px solid #2c2c30; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column">
+<img src="usluga-keramicka-zastita.jpg" alt="Nanošenje keramičke zaštite aplikatorom na haubu crnog auta" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 62% center">
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 24px 24px; flex-grow: 1">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square"><path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6zM8 12l3 3 5-6"></path></svg>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 26px; line-height: 1.1">Keramička zaštita</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: #a8a8ad; flex-grow: 1">Nanosimo zaštitni sloj na lak. Voda se sliva, a auto se lakše pere.</p>
+<a class="bl-ghost" href="#rezervacija" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; margin-top: 8px; border-radius: 4px; font-size: 15px; font-weight: 500">Rezerviši zaštitu</a>
+</div>
+</div>
+<div style="background: #0b0b0c; border: 1px solid #2c2c30; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column">
+<img src="usluga-dubinsko-ciscenje.jpg" alt="Čišćenje kontrolne table i ventilacije četkom u enterijeru" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 55% center">
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 24px 24px; flex-grow: 1">
+<svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square"><path d="M7 3h5l1 10h6v4H7zM8 17v4M17 17v4"></path></svg>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 26px; line-height: 1.1">Dubinsko čišćenje</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: #a8a8ad; flex-grow: 1">Peremo sedišta i tepihe. Skidamo fleke od kafe i miris dima.</p>
+<a class="bl-ghost" href="#rezervacija" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; margin-top: 8px; border-radius: 4px; font-size: 15px; font-weight: 500">Rezerviši čišćenje</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PRE I POSLE -->
+<section id="radovi" style="background: #0b0b0c">
+<div class="bl-wrap bl-sec">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin-bottom: 48px; text-align: center">
+<div style="display: flex; align-items: center; gap: 12px">
+<span aria-hidden="true" style="display: block; width: 28px; height: 3px; background: #d61f36"></span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; color: #ff4d64">PRE I POSLE</span>
+</div>
+<h2 class="bl-h2" style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; line-height: 1; text-transform: uppercase">Razliku vidiš <span style="color: #ff4d64">odmah</span></h2>
+<p style="margin: 0; max-width: 52ch; color: #a8a8ad">Povuci liniju levo ili desno. Levo je auto kad stigne kod nas, desno kad ga preuzmeš.</p>
+</div>
+<div id="bl-cmp" style="display: flex; flex-direction: column; gap: 20px; max-width: 1040px; margin: 0 auto">
+<div role="group" aria-label="Izaberi poređenje" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px">
+<button class="bl-field bl-cmp-tab" type="button" data-i="0" aria-pressed="true" style="min-height: 44px; padding: 0 20px; border-radius: 4px; cursor: pointer; font-family: Barlow, system-ui, sans-serif; font-size: 16px; font-weight: 500;">Spoljašnjost</button>
+<button class="bl-field bl-cmp-tab" type="button" data-i="1" aria-pressed="false" style="min-height: 44px; padding: 0 20px; border-radius: 4px; cursor: pointer; font-family: Barlow, system-ui, sans-serif; font-size: 16px; font-weight: 500;">Farovi</button>
+<button class="bl-field bl-cmp-tab" type="button" data-i="2" aria-pressed="false" style="min-height: 44px; padding: 0 20px; border-radius: 4px; cursor: pointer; font-family: Barlow, system-ui, sans-serif; font-size: 16px; font-weight: 500;">Enterijer</button>
+</div>
+<div class="bl-cmp" style="position: relative; width: 100%; border-radius: 8px; overflow: hidden; border: 1px solid #2c2c30; background: #26262a; user-select: none">
+<div class="bl-cmp-set" data-i="0" data-caption="Spoljašnjost: pranje i poliranje laka">
+<img src="posle-spolja.jpg" alt="Posle: crni sedan čist i sjajan" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover">
+<img class="bl-cmp-before" src="pre-spolja.jpg" alt="Pre: crni sedan prekriven prljavštinom" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; clip-path: inset(0 50% 0 0)">
+</div>
+<div class="bl-cmp-set" data-i="1" data-caption="Farovi: poliramo požutele i zamućene farove" hidden>
+<img src="posle-farovi.jpg" alt="Posle: providan far posle poliranja" loading="lazy" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover">
+<img class="bl-cmp-before" src="pre-farovi.jpg" alt="Pre: požuteo i zamućen far" loading="lazy" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; clip-path: inset(0 50% 0 0)">
+</div>
+<div class="bl-cmp-set" data-i="2" data-caption="Enterijer: dubinsko čišćenje sedišta i patosnica" hidden>
+<img src="posle-enterijer.jpg" alt="Posle: čist enterijer, sedište i patosnice" loading="lazy" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover">
+<img class="bl-cmp-before" src="pre-enterijer.jpg" alt="Pre: blatnjavo sedište i patosnice" loading="lazy" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; clip-path: inset(0 50% 0 0)">
+</div>
+<span class="bl-cmp-line" aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; margin-left: -1px; background: #f2f2f0; z-index: 2; pointer-events: none"></span>
+<span style="position: absolute; left: 16px; top: 16px; z-index: 2; padding: 6px 14px; border-radius: 4px; background: #0b0b0c; color: #f2f2f0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 0.12em; pointer-events: none">PRE</span>
+<span style="position: absolute; right: 16px; top: 16px; z-index: 2; padding: 6px 14px; border-radius: 4px; background: #d61f36; color: #ffffff; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 0.12em; pointer-events: none">POSLE</span>
+<input class="bl-cmp-range" type="range" min="0" max="100" step="1" value="50" aria-label="Pomeri levo ili desno da uporediš pre i posle">
+<span class="bl-cmp-handle" aria-hidden="true" style="left: 50%"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"></path></svg></span>
+</div>
+<p class="bl-cmp-cap" style="margin: 0; text-align: center; font-size: 16px; color: #a8a8ad">Spoljašnjost: pranje i poliranje laka</p>
+</div>
+</div>
+</section>
+
+<!-- KAKO IZGLEDA TRETMAN -->
+<section id="tretman" style="background: #151517">
+<div class="bl-wrap bl-sec">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin-bottom: 64px; text-align: center">
+<div style="display: flex; align-items: center; gap: 12px">
+<span aria-hidden="true" style="display: block; width: 28px; height: 3px; background: #d61f36"></span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; color: #ff4d64">KORAK PO KORAK</span>
+</div>
+<h2 class="bl-h2" style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; line-height: 1; text-transform: uppercase">Kako izgleda tretman</h2>
+<p style="margin: 0; max-width: 52ch; color: #a8a8ad">Četiri koraka od poziva do preuzimanja auta.</p>
+</div>
+<ol class="bl-4col" style="margin: 0; padding: 0; list-style: none">
+<li style="display: flex; flex-direction: column; gap: 16px; padding: 32px 28px; background: #0b0b0c; border: 1px solid #2c2c30; border-radius: 8px">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 48px; line-height: 1; color: #ff4d64">01</span>
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square"><rect x="3" y="5" width="18" height="16"></rect><path d="M3 10h18M8 3v4M16 3v4M8 15h3"></path></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 26px; line-height: 1.1">Zakaži termin</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: #a8a8ad">Popuni formu ili nas pozovi. Javimo ti se da potvrdimo dan i vreme.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 16px; padding: 32px 28px; background: #0b0b0c; border: 1px solid #2c2c30; border-radius: 8px">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 48px; line-height: 1; color: #ff4d64">02</span>
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square"><circle cx="11" cy="11" r="7"></circle><path d="M16 16l5 5"></path></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 26px; line-height: 1.1">Pregled automobila</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: #a8a8ad">Zajedno pogledamo auto pod jakim svetlom. Kažemo šta možemo da uradimo i koliko košta, pre početka rada.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 16px; padding: 32px 28px; background: #0b0b0c; border: 1px solid #2c2c30; border-radius: 8px">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 48px; line-height: 1; color: #ff4d64">03</span>
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square"><path d="M12 4a8 8 0 1 0 0 16 8 8 0 1 0 0-16M12 10a2 2 0 1 0 0 4 2 2 0 1 0 0-4"></path></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 26px; line-height: 1.1">Profesionalni tretman</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: #a8a8ad">Radimo uslugu koju si izabrao: pranje, poliranje, zaštitu laka ili enterijer.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 16px; padding: 32px 28px; background: #0b0b0c; border: 1px solid #2c2c30; border-radius: 8px">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 48px; line-height: 1; color: #ff4d64">04</span>
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square"><circle cx="8" cy="15" r="4"></circle><path d="M11 12l9-9M16 7l3 3M18 5l2 2"></path></svg>
+</div>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 26px; line-height: 1.1">Preuzimanje vozila</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: #a8a8ad">Pogledaš auto s nama, pod istim svetlom, pre nego što ga preuzmeš.</p>
+</li>
+</ol>
+</div>
+</section>
+
+<!-- CENOVNIK -->
+<section id="cenovnik" style="background: #0b0b0c">
+<div class="bl-wrap bl-sec">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin-bottom: 64px; text-align: center">
+<div style="display: flex; align-items: center; gap: 12px">
+<span aria-hidden="true" style="display: block; width: 28px; height: 3px; background: #d61f36"></span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; color: #ff4d64">CENOVNIK</span>
+</div>
+<h2 class="bl-h2" style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; line-height: 1; text-transform: uppercase">Cene unapred, bez iznenađenja</h2>
+<p style="margin: 0; max-width: 52ch; color: #a8a8ad">Tačnu cenu kažemo kad pogledamo auto. Ovo su početne.</p>
+</div>
+<div class="bl-3col" style="align-items: stretch">
+<div style="position: relative; display: flex; flex-direction: column; gap: 24px; padding: 40px 32px 32px; border-radius: 8px; background: #0b0b0c; border: 1px solid #2c2c30">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 28px; line-height: 1.1">Pranje</h3>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; flex-grow: 1">
+<li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.4; color: #a8a8ad"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none"><polyline points="5 12 10 17 19 7"></polyline></svg><span>Ručno pranje spolja</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.4; color: #a8a8ad"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none"><polyline points="5 12 10 17 19 7"></polyline></svg><span>Usisavanje enterijera</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.4; color: #a8a8ad"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none"><polyline points="5 12 10 17 19 7"></polyline></svg><span>Čišćenje plastike</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.4; color: #a8a8ad"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none"><polyline points="5 12 10 17 19 7"></polyline></svg><span>Felne i gume</span></li>
+</ul>
+<div style="display: flex; align-items: baseline; gap: 8px; padding-top: 16px; border-top: 1px solid #2c2c30">
+<span style="font-size: 16px; color: #a8a8ad">od</span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 36px; line-height: 1">4.000 RSD</span>
+</div>
+<a class="bl-ghost" href="#rezervacija" style="display: inline-flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 4px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.04em">REZERVIŠI PRANJE</a>
+</div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 24px; padding: 40px 32px 32px; border-radius: 8px; background: #0b0b0c; border: 2px solid #d61f36">
+<span style="position: absolute; top: -14px; left: 50%; transform: translateX(-50%); padding: 4px 12px; border-radius: 4px; background: #d61f36; color: #ffffff; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.12em; white-space: nowrap">PREPORUČUJEMO</span>
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 28px; line-height: 1.1">Poliranje</h3>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; flex-grow: 1">
+<li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.4; color: #a8a8ad"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none"><polyline points="5 12 10 17 19 7"></polyline></svg><span>Skidamo kružne ogrebotine</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.4; color: #a8a8ad"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none"><polyline points="5 12 10 17 19 7"></polyline></svg><span>Vraćamo dubinu i sjaj laka</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.4; color: #a8a8ad"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none"><polyline points="5 12 10 17 19 7"></polyline></svg><span>Zaštita laka posle poliranja</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.4; color: #a8a8ad"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none"><polyline points="5 12 10 17 19 7"></polyline></svg><span>Pregled pod jakim svetlom</span></li>
+</ul>
+<div style="display: flex; align-items: baseline; gap: 8px; padding-top: 16px; border-top: 1px solid #2c2c30">
+<span style="font-size: 16px; color: #a8a8ad">od</span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 36px; line-height: 1">14.000 RSD</span>
+</div>
+<a class="bl-btn" href="#rezervacija" style="display: inline-flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 4px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.04em">REZERVIŠI POLIRANJE</a>
+</div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 24px; padding: 40px 32px 32px; border-radius: 8px; background: #0b0b0c; border: 1px solid #2c2c30">
+<h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 28px; line-height: 1.1">Keramička zaštita</h3>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; flex-grow: 1">
+<li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.4; color: #a8a8ad"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none"><polyline points="5 12 10 17 19 7"></polyline></svg><span>Poliranje pre nanošenja</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.4; color: #a8a8ad"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none"><polyline points="5 12 10 17 19 7"></polyline></svg><span>Voda se sliva sa laka</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.4; color: #a8a8ad"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none"><polyline points="5 12 10 17 19 7"></polyline></svg><span>Lakše pranje posle</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.4; color: #a8a8ad"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none"><polyline points="5 12 10 17 19 7"></polyline></svg><span>Trajnost: [TRAJNOST]</span></li>
+</ul>
+<div style="display: flex; align-items: baseline; gap: 8px; padding-top: 16px; border-top: 1px solid #2c2c30">
+<span style="font-size: 16px; color: #a8a8ad">od</span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 36px; line-height: 1">17.000 RSD</span>
+</div>
+<a class="bl-ghost" href="#rezervacija" style="display: inline-flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 4px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.04em">REZERVIŠI ZAŠTITU</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- O NAŠOJ RADIONICI (sadržaj u [ZAGRADAMA] zameni pravim podacima i fotografijama) -->
+<section id="radionica" style="background: #151517">
+<div class="bl-wrap bl-sec bl-about">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; align-items: center; gap: 12px">
+<span aria-hidden="true" style="display: block; width: 28px; height: 3px; background: #d61f36"></span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; color: #ff4d64">O NAMA</span>
+</div>
+<h2 class="bl-h2" style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; line-height: 1; text-transform: uppercase">O našoj radionici</h2>
+<p style="margin: 0; max-width: 60ch; color: #c8c8cc">Blackline Auto Spa radi detailing automobila, spolja i unutra. Za 3 godine kroz naše ruke prošlo je više od 500 automobila.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+<li style="display: flex; gap: 16px; align-items: flex-start; padding: 20px 0; border-top: 1px solid #2c2c30">
+<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none; margin-top: 2px"><path d="M3 21V9l9-6 9 6v12"></path><path d="M7 21v-8h10v8"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 4px"><h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.1">Radionica</h3><p style="margin: 0; font-size: 16px; line-height: 1.5; color: #a8a8ad">[OPIS RADIONICE: gde ste, koliko auta primate odjednom, kakvo je svetlo za pregled laka.]</p></div>
+</li>
+<li style="display: flex; gap: 16px; align-items: flex-start; padding: 20px 0; border-top: 1px solid #2c2c30">
+<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none; margin-top: 2px"><path d="M12 4a8 8 0 1 0 0 16 8 8 0 1 0 0-16M12 10a2 2 0 1 0 0 4 2 2 0 1 0 0-4"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 4px"><h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.1">Oprema</h3><p style="margin: 0; font-size: 16px; line-height: 1.5; color: #a8a8ad">[OPREMA: mašine za poliranje, uređaji za dubinsko pranje, preparati koje koristite.]</p></div>
+</li>
+<li style="display: flex; gap: 16px; align-items: flex-start; padding: 20px 0; border-top: 1px solid #2c2c30; border-bottom: 1px solid #2c2c30">
+<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square" style="flex: none; margin-top: 2px"><circle cx="9" cy="8" r="3.5"></circle><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"></path><circle cx="17" cy="9" r="2.5"></circle><path d="M17 14c2.5 0 4 1.8 4 4.5"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 4px"><h3 style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.1">Tim</h3><p style="margin: 0; font-size: 16px; line-height: 1.5; color: #a8a8ad">[TIM: imena i uloge ljudi koji rade na autima.]</p></div>
+</li>
+</ul>
+<a class="bl-btn" href="#rezervacija" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 56px; padding: 0 28px; border-radius: 4px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.04em">REZERVIŠI TERMIN</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<img src="usluga-pranje.jpg" alt="Radionica Blackline Auto Spa: pranje crnog sedana pod jakim svetlom" style="display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: 45% center; border-radius: 8px; border: 1px solid #2c2c30; box-sizing: border-box">
+<div class="bl-3col" style="gap: 16px">
+<img src="usluga-poliranje.jpg" alt="Detailer polira haubu mašinom za poliranje" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: 60% center; border-radius: 8px; border: 1px solid #2c2c30; box-sizing: border-box">
+<img src="usluga-dubinsko-ciscenje.jpg" alt="Čišćenje kontrolne table četkom" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% center; border-radius: 8px; border: 1px solid #2c2c30; box-sizing: border-box">
+<img src="usluga-keramicka-zastita.jpg" alt="Aplikator i preparat za keramičku zaštitu na haubi" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: 66% center; border-radius: 8px; border: 1px solid #2c2c30; box-sizing: border-box">
+</div>
+</div>
+</div>
+</section>
+
+<!-- RECENZIJE: OVO SU PRIMERI. Pre objave zameni ih pravim recenzijama klijenata (uz njihovu dozvolu) ili obriši celu sekciju. -->
+<section id="recenzije" style="background: #0b0b0c">
+<div class="bl-wrap bl-sec">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin-bottom: 64px; text-align: center">
+<div style="display: flex; align-items: center; gap: 12px">
+<span aria-hidden="true" style="display: block; width: 28px; height: 3px; background: #d61f36"></span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; color: #ff4d64">RECENZIJE</span>
+</div>
+<h2 class="bl-h2" style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; line-height: 1; text-transform: uppercase">Šta naši klijenti kažu</h2>
+<p style="margin: 0; max-width: 56ch; font-size: 15px; color: #a8a8ad; border: 1px dashed #4a4a4f; border-radius: 4px; padding: 8px 14px">Primeri recenzija. Zameni ih pravim recenzijama klijenata pre objave sajta.</p>
+</div>
+<div class="bl-3col">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 20px; padding: 32px; background: #151517; border: 1px solid #2c2c30; border-radius: 8px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<span role="img" aria-label="Ocena: 5 od 5" style="display: flex; gap: 4px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg></span>
+<span style="padding: 2px 8px; border: 1px solid #4a4a4f; border-radius: 4px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.12em; color: #a8a8ad">PRIMER</span>
+</div>
+<blockquote style="margin: 0; font-size: 17px; line-height: 1.6; color: #d0d0d4; flex-grow: 1">[Prava recenzija klijenta o poliranju. Na primer: kakav je lak bio pre i kako izgleda posle.]</blockquote>
+<figcaption style="display: flex; flex-direction: column; padding-top: 16px; border-top: 1px solid #2c2c30"><span style="font-weight: 600">[IME KLIJENTA]</span><span style="font-size: 15px; color: #a8a8ad">[MODEL AUTA] · Poliranje</span></figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 20px; padding: 32px; background: #151517; border: 1px solid #2c2c30; border-radius: 8px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<span role="img" aria-label="Ocena: 5 od 5" style="display: flex; gap: 4px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg></span>
+<span style="padding: 2px 8px; border: 1px solid #4a4a4f; border-radius: 4px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.12em; color: #a8a8ad">PRIMER</span>
+</div>
+<blockquote style="margin: 0; font-size: 17px; line-height: 1.6; color: #d0d0d4; flex-grow: 1">[Prava recenzija klijenta o dubinskom čišćenju. Na primer: koje fleke ili mirise ste skinuli iz enterijera.]</blockquote>
+<figcaption style="display: flex; flex-direction: column; padding-top: 16px; border-top: 1px solid #2c2c30"><span style="font-weight: 600">[IME KLIJENTA]</span><span style="font-size: 15px; color: #a8a8ad">[MODEL AUTA] · Dubinsko čišćenje</span></figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 20px; padding: 32px; background: #151517; border: 1px solid #2c2c30; border-radius: 8px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<span role="img" aria-label="Ocena: 5 od 5" style="display: flex; gap: 4px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#d61f36"><path d="M12 2l3 7h7l-5.5 4.5 2 7.5-6.5-4.5-6.5 4.5 2-7.5L2 9h7z"></path></svg></span>
+<span style="padding: 2px 8px; border: 1px solid #4a4a4f; border-radius: 4px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.12em; color: #a8a8ad">PRIMER</span>
+</div>
+<blockquote style="margin: 0; font-size: 17px; line-height: 1.6; color: #d0d0d4; flex-grow: 1">[Prava recenzija klijenta o keramičkoj zaštiti. Na primer: kako se auto pere i održava posle zaštite.]</blockquote>
+<figcaption style="display: flex; flex-direction: column; padding-top: 16px; border-top: 1px solid #2c2c30"><span style="font-weight: 600">[IME KLIJENTA]</span><span style="font-size: 15px; color: #a8a8ad">[MODEL AUTA] · Keramička zaštita</span></figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<!-- REZERVACIJA -->
+<section id="rezervacija" style="background: #151517">
+<div class="bl-wrap bl-sec bl-book">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; align-items: center; gap: 12px">
+<span aria-hidden="true" style="display: block; width: 28px; height: 3px; background: #d61f36"></span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; color: #ff4d64">REZERVIŠI TERMIN</span>
+</div>
+<h2 class="bl-h2" style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; line-height: 1; text-transform: uppercase">Izaberi uslugu i dan. Mi zovemo.</h2>
+<p style="margin: 0; color: #a8a8ad">Javimo ti se telefonom da potvrdimo termin.</p>
+<form id="bl-form" method="POST" action="" style="display: flex; flex-direction: column; gap: 16px; padding-top: 8px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="bl-usluga" style="font-size: 15px; font-weight: 500">Usluga</label>
+<select class="bl-field" id="bl-usluga" name="usluga" style="min-height: 52px; padding: 0 16px; border-radius: 4px; border: 1px solid #3a3a3f; background: #0b0b0c; color: #f2f2f0; font: inherit; font-size: 17px">
+<option>Pranje spolja i unutra</option>
+<option>Poliranje laka</option>
+<option>Keramička zaštita</option>
+<option>Dubinsko čišćenje enterijera</option>
+</select>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="bl-datum" style="font-size: 15px; font-weight: 500">Datum</label>
+<input class="bl-field" id="bl-datum" name="datum" type="date" style="min-height: 52px; padding: 0 16px; border-radius: 4px; border: 1px solid #3a3a3f; background: #0b0b0c; color: #f2f2f0; font: inherit; font-size: 17px; color-scheme: dark; min-width: 0">
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="bl-vreme" style="font-size: 15px; font-weight: 500">Vreme</label>
+<input class="bl-field" id="bl-vreme" name="vreme" type="time" style="min-height: 52px; padding: 0 16px; border-radius: 4px; border: 1px solid #3a3a3f; background: #0b0b0c; color: #f2f2f0; font: inherit; font-size: 17px; color-scheme: dark; min-width: 0">
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="bl-ime" style="font-size: 15px; font-weight: 500">Ime</label>
+<input class="bl-field" id="bl-ime" name="ime" type="text" autocomplete="name" required style="min-height: 52px; padding: 0 16px; border-radius: 4px; border: 1px solid #3a3a3f; background: #0b0b0c; color: #f2f2f0; font: inherit; font-size: 17px">
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: end">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="bl-tel" style="font-size: 15px; font-weight: 500">Broj telefona</label>
+<input class="bl-field" id="bl-tel" name="telefon" type="tel" autocomplete="tel" required style="min-height: 52px; padding: 0 16px; border-radius: 4px; border: 1px solid #3a3a3f; background: #0b0b0c; color: #f2f2f0; font: inherit; font-size: 17px; min-width: 0">
+</div>
+<button class="bl-btn" type="submit" style="min-height: 52px; border-radius: 4px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 19px; letter-spacing: 0.04em">REZERVIŠI TERMIN</button>
+</div>
+<p id="bl-form-msg" role="status" style="margin: 0; font-size: 15px; color: #c8c8cc"></p>
+</form>
+</div>
+<img src="hero.jpg" alt="Crni sedan posle detailinga u Blackline studiju" style="display: block; width: 100%; height: 100%; min-height: 420px; object-fit: cover; object-position: 62% center; border-radius: 8px; border: 1px solid #2c2c30; box-sizing: border-box">
+</div>
+</section>
+
+<!-- CESTO POSTAVLJENA PITANJA (odgovore proveri i prilagodi) -->
+<section id="pitanja" style="background: #0b0b0c">
+<div class="bl-wrap bl-sec">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin-bottom: 48px; text-align: center">
+<div style="display: flex; align-items: center; gap: 12px">
+<span aria-hidden="true" style="display: block; width: 28px; height: 3px; background: #d61f36"></span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; color: #ff4d64">PITANJA</span>
+</div>
+<h2 class="bl-h2" style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; line-height: 1; text-transform: uppercase">Često postavljena pitanja</h2>
+</div>
+<div style="max-width: 840px; margin: 0 auto; border-top: 1px solid #2c2c30">
+<details class="bl-faq" style="border-bottom: 1px solid #2c2c30">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 72px; padding: 16px 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2; color: #f2f2f0">Kako da zakažem termin?<svg class="bl-faq-ic" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff4d64" stroke-width="2" stroke-linecap="square" style="flex: none"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0; padding: 0 48px 24px 0; max-width: 65ch; color: #a8a8ad">Popuni formu na ovoj stranici ili nas pozovi na [TELEFON]. Javimo ti se da potvrdimo dan i vreme.</p>
+</details>
+<details class="bl-faq" style="border-bottom: 1px solid #2c2c30">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 72px; padding: 16px 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2; color: #f2f2f0">Koliko traje tretman?<svg class="bl-faq-ic" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff4d64" stroke-width="2" stroke-linecap="square" style="flex: none"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0; padding: 0 48px 24px 0; max-width: 65ch; color: #a8a8ad">Zavisi od usluge, veličine i stanja auta. Okvirno vreme kažemo kad zakazuješ, a tačno posle pregleda. [OKVIRNO TRAJANJE PO USLUZI]</p>
+</details>
+<details class="bl-faq" style="border-bottom: 1px solid #2c2c30">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 72px; padding: 16px 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2; color: #f2f2f0">Šta je keramička zaštita i koliko traje?<svg class="bl-faq-ic" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff4d64" stroke-width="2" stroke-linecap="square" style="flex: none"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0; padding: 0 48px 24px 0; max-width: 65ch; color: #a8a8ad">To je zaštitni sloj koji nanosimo na lak posle poliranja. Voda se lakše sliva, a auto se lakše pere. Koliko traje zavisi od preparata, vožnje i održavanja: [TRAJNOST].</p>
+</details>
+<details class="bl-faq" style="border-bottom: 1px solid #2c2c30">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 72px; padding: 16px 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2; color: #f2f2f0">Da li poliranje skida sve ogrebotine?<svg class="bl-faq-ic" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff4d64" stroke-width="2" stroke-linecap="square" style="flex: none"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0; padding: 0 48px 24px 0; max-width: 65ch; color: #a8a8ad">Poliranje skida sitne kružne ogrebotine i matiran sloj sa laka. Duboke ogrebotine, koje su prošle kroz lak, ne može uvek da skine. Na pregledu ti pokažemo šta može, a šta ne.</p>
+</details>
+<details class="bl-faq" style="border-bottom: 1px solid #2c2c30">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 72px; padding: 16px 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2; color: #f2f2f0">Šta uključuje dubinsko čišćenje enterijera?<svg class="bl-faq-ic" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff4d64" stroke-width="2" stroke-linecap="square" style="flex: none"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0; padding: 0 48px 24px 0; max-width: 65ch; color: #a8a8ad">Usisavanje, pranje sedišta i tepiha i čišćenje plastike i kože. Fleke skidamo koliko materijal dozvoljava. Neke stare fleke ne mogu potpuno da se skinu, i to ti kažemo unapred.</p>
+</details>
+<details class="bl-faq" style="border-bottom: 1px solid #2c2c30">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 72px; padding: 16px 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2; color: #f2f2f0">Kako se formira cena?<svg class="bl-faq-ic" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff4d64" stroke-width="2" stroke-linecap="square" style="flex: none"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0; padding: 0 48px 24px 0; max-width: 65ch; color: #a8a8ad">Cene u cenovniku su početne. Konačna cena zavisi od veličine i stanja auta. Kažemo ti je posle pregleda, pre nego što počnemo.</p>
+</details>
+</div>
+</div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt" style="background: #151517">
+<div class="bl-wrap bl-sec bl-2col" style="align-items: stretch">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; align-items: center; gap: 12px">
+<span aria-hidden="true" style="display: block; width: 28px; height: 3px; background: #d61f36"></span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; color: #ff4d64">KONTAKT</span>
+</div>
+<h2 class="bl-h2" style="margin: 0; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; line-height: 1; text-transform: uppercase">Pozovi ili svrati</h2>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+<li style="display: flex; align-items: center; gap: 16px; padding: 16px 0; border-top: 1px solid #2c2c30">
+<span style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid #3a3a3f; border-radius: 4px; flex: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square"><path d="M5 3h4l2 5-3 2a11 11 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"></path></svg></span>
+<span>[TELEFON]</span>
+</li>
+<li style="display: flex; align-items: center; gap: 16px; padding: 16px 0; border-top: 1px solid #2c2c30">
+<span style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid #3a3a3f; border-radius: 4px; flex: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square"><rect x="3" y="5" width="18" height="14"></rect><path d="M3 6l9 7 9-7"></path></svg></span>
+<span>[EMAIL]</span>
+</li>
+<li style="display: flex; align-items: center; gap: 16px; padding: 16px 0; border-top: 1px solid #2c2c30">
+<span style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid #3a3a3f; border-radius: 4px; flex: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square"><path d="M12 21s-7-6-7-12a7 7 0 0 1 14 0c0 6-7 12-7 12z"></path><circle cx="12" cy="9" r="2.5"></circle></svg></span>
+<span>[ADRESA], [GRAD]</span>
+</li>
+<li style="display: flex; align-items: center; gap: 16px; padding: 16px 0; border-top: 1px solid #2c2c30; border-bottom: 1px solid #2c2c30">
+<span style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid #3a3a3f; border-radius: 4px; flex: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg></span>
+<span>[RADNO VREME]</span>
+</li>
+</ul>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<a class="bl-ghost" href="#kontakt" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 4px; font-size: 15px; font-weight: 500">Instagram</a>
+<a class="bl-ghost" href="#kontakt" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 4px; font-size: 15px; font-weight: 500">TikTok</a>
+<a class="bl-ghost" href="#kontakt" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 4px; font-size: 15px; font-weight: 500">YouTube</a>
+</div>
+</div>
+<div role="img" aria-label="Mesto za mapu sa lokacijom" style="min-height: 400px; border-radius: 8px; background: #26262a; border: 1px solid #2c2c30; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 32px; box-sizing: border-box; text-align: center">
+<svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d61f36" stroke-width="2" stroke-linecap="square"><path d="M12 21s-7-6-7-12a7 7 0 0 1 14 0c0 6-7 12-7 12z"></path><circle cx="12" cy="9" r="2.5"></circle></svg>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; color: #b4b4b9">MAPA: LOKACIJA RADIONICE</span>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #0b0b0c; border-top: 1px solid #2c2c30">
+<div class="bl-wrap" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 32px; padding-bottom: 32px; font-size: 15px; color: #a8a8ad">
+<div style="display: flex; align-items: center; gap: 12px">
+<span aria-hidden="true" style="display: block; width: 28px; height: 4px; background: #d61f36"></span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: 0.16em; color: #f2f2f0">BLACKLINE</span>
+<span style="font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.16em">AUTO SPA</span>
+</div>
+<span>Detailing automobila, spolja i unutra.</span>
+</div>
+</footer>
+
+</div>
+<script>
+(function () {
+  // Pre/posle klizač
+  var root = document.getElementById('bl-cmp');
+  if (root) {
+    var range = root.querySelector('.bl-cmp-range');
+    var line = root.querySelector('.bl-cmp-line');
+    var handle = root.querySelector('.bl-cmp-handle');
+    var cap = root.querySelector('.bl-cmp-cap');
+    var sets = root.querySelectorAll('.bl-cmp-set');
+    var tabs = root.querySelectorAll('.bl-cmp-tab');
+    function setPos(v) {
+      line.style.left = v + '%';
+      handle.style.left = v + '%';
+      root.querySelectorAll('.bl-cmp-before').forEach(function (img) { img.style.clipPath = 'inset(0 ' + (100 - v) + '% 0 0)'; });
+    }
+    range.addEventListener('input', function () { setPos(range.value); });
+    function paintTabs(active) {
+      tabs.forEach(function (t, i) {
+        var on = i === active;
+        t.setAttribute('aria-pressed', on ? 'true' : 'false');
+        t.style.background = on ? '#d61f36' : 'transparent';
+        t.style.color = on ? '#ffffff' : '#f2f2f0';
+        t.style.border = on ? '1px solid #d61f36' : '1px solid #3a3a3f';
+      });
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () {
+        sets.forEach(function (s, j) { s.hidden = j !== i; });
+        cap.textContent = sets[i].getAttribute('data-caption');
+        paintTabs(i); range.value = 50; setPos(50);
+      });
+    });
+    paintTabs(0);
+  }
+  // Mobilni meni: zatvori posle klika na link
+  document.querySelectorAll('.bl-mnav a').forEach(function (a) {
+    a.addEventListener('click', function () { a.closest('details').removeAttribute('open'); });
+  });
+  // Forma za rezervaciju.
+  // Da bi forma slala rezervacije na mejl: napravi besplatan nalog na formspree.io,
+  // napravi formu i upiši njen link ovde, npr. 'https://formspree.io/f/abcdwxyz'.
+  var FORM_ENDPOINT = '';
+  var form = document.getElementById('bl-form');
+  var msg = document.getElementById('bl-form-msg');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!FORM_ENDPOINT) {
+        msg.textContent = 'Online rezervacija još nije povezana. Pozovi nas na [TELEFON].';
+        return;
+      }
+      msg.textContent = 'Šaljemo...';
+      fetch(FORM_ENDPOINT, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+        .then(function (r) {
+          if (r.ok) { form.reset(); msg.textContent = 'Primili smo zahtev. Javimo ti se telefonom da potvrdimo termin.'; }
+          else { msg.textContent = 'Slanje nije uspelo. Pozovi nas na [TELEFON].'; }
+        })
+        .catch(function () { msg.textContent = 'Slanje nije uspelo. Pozovi nas na [TELEFON].'; });
+    });
+  }
+})();
+</script>
+</body>
+</html>
